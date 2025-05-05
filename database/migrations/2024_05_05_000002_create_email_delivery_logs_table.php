@@ -10,7 +10,7 @@ return new class extends Migration {
         Schema::create('email_delivery_logs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('campaign_id')->constrained('email_campaigns')->onDelete('cascade');
-            $table->integer('customer_id')->unsigned(); 
+            $table->integer('customer_id');
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
             $table->enum('status', ['sent', 'failed']);
             $table->text('error_message')->nullable();
