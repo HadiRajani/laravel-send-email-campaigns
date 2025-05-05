@@ -9,7 +9,7 @@ class EmailCampaignServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/email-campaign.php', 'email-campaign');
+        // $this->mergeConfigFrom(__DIR__ . '/../config/email-campaign.php', 'email-campaign');
     }
 
     public function boot()

@@ -1,8 +1,12 @@
+<?php 
+
 namespace VendorAliHadi\EmailCampaign\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
-use VendorAliHadi\EmailCampaign\Models\{Customer, EmailCampaign, EmailDeliveryLog};
+use VendorAliHadi\EmailCampaign\Models\Customer;
+use VendorAliHadi\EmailCampaign\Models\EmailCampaign;
+use VendorAliHadi\EmailCampaign\Models\EmailDeliveryLog;
 use Illuminate\Support\Facades\Mail;
 use VendorAliHadi\EmailCampaign\Jobs\SendCampaignEmail;
 

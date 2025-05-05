@@ -1,3 +1,5 @@
+<?php 
+
 use Illuminate\Support\Facades\Route;
 use VendorAliHadi\EmailCampaign\Http\Controllers\CampaignController;
 

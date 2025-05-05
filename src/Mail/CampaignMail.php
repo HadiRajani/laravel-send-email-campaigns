@@ -1,3 +1,5 @@
+<?php 
+
 namespace VendorAliHadi\EmailCampaign\Mail;
 
 use Illuminate\Mail\Mailable;

@@ -1,3 +1,5 @@
+<?php 
+
 namespace VendorAliHadi\EmailCampaign\Jobs;
 
 use Illuminate\Bus\Queueable;
