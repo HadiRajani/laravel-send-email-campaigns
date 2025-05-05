@@ -49,8 +49,13 @@ class CampaignController extends Controller
 
     public function send(Request $request, $id)
     {
-        $campaign = EmailCampaign::findOrFail($id);
+        $request->validate([
+            'status' => 'nullable|string',
+            'days_until_expiry' => 'nullable|integer'
+        ]);
 
+        $campaign = EmailCampaign::findOrFail($id);
+        
         $customers = Customer::query();
 
         if ($request->status) {
